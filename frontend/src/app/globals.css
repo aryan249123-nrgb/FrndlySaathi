@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf7f2;
+  --foreground: #221814;
+  --sidebar-bg: #f5efe6;
+  --card-bg: #ffffff;
+  --card-border: #e6ddce;
+  --card-hover: #d8cdbc;
+  --accent-warm: #b45309;
+  --accent-cream: #eedfcc;
+  --text-primary: #221814;
+  --text-secondary: #6e5e54;
+  --text-muted: #8c796b;
+}
+
+body {
+  background-color: #faf7f2;
+  color: #221814;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  letter-spacing: -0.01em;
+}
+
+/* Light warm solid card utilities (no gradients) */
+.warm-card {
+  background-color: #ffffff;
+  border: 1px solid #e6ddce;
+  box-shadow: 0 1px 3px 0 rgba(34, 24, 20, 0.04);
+  transition: all 0.2s ease;
+}
+
+.warm-card:hover {
+  border-color: #d6cab8;
+  box-shadow: 0 4px 12px 0 rgba(34, 24, 20, 0.06);
+  transform: translateY(-1px);
+}
+
+.warm-panel {
+  background-color: #f7f2eb;
+  border: 1px solid #e6ddce;
+}
+
+.warm-input {
+  background-color: #ffffff;
+  border: 1px solid #dfd4c4;
+  color: #221814;
+  transition: all 0.2s ease;
+}
+
+.warm-input:focus {
+  outline: none;
+  border-color: #b45309;
+  box-shadow: 0 0 0 2px rgba(180, 83, 9, 0.15);
+}
+
+/* Custom light warm scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf7f2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ded3c2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c9bea9;
+}
